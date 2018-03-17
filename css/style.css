@@ -1,9 +1,6 @@
-
-
 .thumbnail {
   position: relative;
 }
-
 .caption {
   position: absolute;
   top: 45%;
@@ -22,14 +19,9 @@
   height: 20px;
   width: 20px;
 }
-
 header {
   padding-top: 60px;
 }
-.wire {
-  border: red 1px solid;  
-}
-
 .img-fluid {
   justify-content: center;
   min-width: 1400px;
