@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework Week 3 </title>
+  </head>
+
+
+<body onload="move(1,25)">
+  
+  <!--   Navigation buttons and the logo  -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="img/hackyourfuture.png" width="40" height="40" class="d-inline-block align-top" alt="hack your future logo"> HackYourFuture Copenhagen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-plus"></i> Go to 
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item active" href="step1.html">Step 1</a>
+            <a class="dropdown-item" href="step2.html">Step 2</a>
+            <a class="dropdown-item" href="step3.html">Step 3</a>
+            <a class="dropdown-item" href="step4.html">Step 4</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"> You are on Step 1</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--  Main Container  -->
+  <main class="container">
+
+    <!--  Header section  -->
+    <header class="row">
+      <h1 class="pt-5 pb-5">Sign up to yourcustomtailor.com</h1>
+    </header>
+    
+      <section class="row">
+        <div class="col-sm-12">
+          <p>
+            We can't wait to help you improve your life-style and gain the attention from people around you!
+          </p>
+          <p>
+            Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences and style. Every week, we will send you a hand-picked selection - we just need to know a few details about you...
+          </p>
+
+          <h2 class="pt-5 pb-5">Step 1/4 - tell us who you are?</h2>
+                
+          <!--  Progress bar section  -->
+          <div class="row pb-5">
+            <div class="col">
+              <label class="col-sm-2 col-form-label text-left">Progress</label>
+              <div class="progress" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" id="ProgressBar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>
+            </div>
+          </div>
+        
+                
+          <form id="form1" action="step2.html">
+            <div class="form-group row">
+              <label for="firstname" class="col-sm-2 col-form-label text-right">Firstname</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="firstname" placeholder="Firstname" required>
+              </div>
+              <label for="lastname" class="col-sm-2 col-form-label text-right">Lastname</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="lastname" placeholder="Lastname" required>
+              </div>
+            </div>
+        
+            <div class="form-group row">
+             <label for="country" class="col-sm-2 col-form-label text-right">Country</label>
+             <div class="col-sm-3">
+                <select class="custom-select my-1 mr-sm-2" id="country">
+                 <option value="dk" selected>Denmark</option>
+                  <option value="de">Germany</option>
+                  <option value="no">Norway</option>
+                  <option value="se">Sweden</option>
+               </select>
+              </div>
+            </div>
+        
+            <div class="form-group row">
+              <label for="address1" class="col-sm-2 col-form-label text-right">Street Address</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="address1" placeholder="Street address" required>
+              </div>
+              <label for="postalcode1" class="col-sm-2 col-form-label text-right">Post code</label>
+              <div class="col-3 col-sm-2">
+                <input type="text" class="form-control" id="postalcode1" placeholder="Postal code" pattern="[0-9]{4}" required>
+              </div>
+            </div>
+        
+            <div class="form-group row">
+              <label for="profiledesc" class="col-sm-2 col-form-label text-right">
+                Profile Description<br>
+                <small><i>Please provide a short description of yourself to be displayed on our social community pages.</i></small>
+              </label>                
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="5" id="profiledesc" maxlength="500"></textarea>
+              </div>
+            </div>  
+            <p>
+              Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.
+            </p>
+            <div class="input-group row">
+              <label for="myCheck" class="col-sm-2 col-form-label text-right">Shipping address</label>
+              <div class="col-sm-4">
+                <div class="checkbox">
+                  <input type="checkbox" class="checkmark" id="myCheck" onclick="myFunction()" value="" checked>
+                </div>
+              </div>
+            </div>
+        
+            <fieldset class="form-group" id="alternateshippingadd" style="display:none">   
+              <h5>Alternate Shipping Address:</h5>
+              <div class="form-group row">
+                <label for="altfirstname" class="col-sm-2 col-form-label text-right">Firstname</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="altfirstname" placeholder="Firstname">
+                </div>
+                <label for="altlastname" class="col-sm-2 col-form-label text-right">Lastname</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="altlastname" placeholder="Lastname">
+                </div>
+              </div>
+                      
+              <div class="form-group row">
+                <label for="altcountry" class="col-sm-2 col-form-label text-right">Country</label>
+                <div class="col-sm-3">
+                  <select class="custom-select my-1 mr-sm-2" id="altcountry">
+                    <option value="dk" selected>Denmark</option>
+                    <option value="de">Germany</option>
+                    <option value="no">Norway</option>
+                    <option value="se">Sweden</option>
+                  </select>
+                </div>
+              </div>
+            
+              <div class="form-group row">
+                <label for="address2" class="col-sm-2 col-form-label text-right">Street Address</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="address2" placeholder="Street address">
+                </div>
+                <label for="postalcode2" class="col-sm-2 col-form-label text-right">Post code</label>
+                <div class="col-3 col-sm-2">
+                  <input type="text" class="form-control" id="postalcode2" placeholder="Postal code" pattern="[0-9]{4}">
+                </div>
+              </div>         
+            </fieldset>
+
+            <div class="d-flex justify-content-end pt-5 pb-5">
+                <button type="submit" class="btn btn-primary btn-lg m-1">Next Step</button>     
+          </div>
+
+          </form>
+        </div>  
+      </section>      
+        
+    </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+  <!--  script to show / hide the alternate shipping address  -->
+  <script>
+    function myFunction() {
+      var checkBox = document.getElementById("myCheck");
+      var text = document.getElementById("alternateshippingadd");
+      if (checkBox.checked == true){
+        text.style.display = "none";
+      } else {
+        text.style.display = "block";
+      }
+    }
+  </script>
+
+  <!--  Script for the progress bar animation -->
+  <script>
+    function move(x,y) {
+      var elem = document.getElementById("ProgressBar");   
+      var width = x;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= y) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+        }
+      }
+    }
+  </script>
+</body>
+</html>

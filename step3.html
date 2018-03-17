@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework Week 3 </title>
+  </head>
+
+
+<body onload="move(50,75)">
+  
+  <!--   Navigation buttons and the logo  -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="img/hackyourfuture.png" width="40" height="40" class="d-inline-block align-top" alt="hack your future logo"> HackYourFuture Copenhagen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user-plus"></i> Go to 
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="step1.html">Step 1</a>
+            <a class="dropdown-item" href="step2.html">Step 2</a>
+            <a class="dropdown-item active" href="step3.html">Step 3</a>
+            <a class="dropdown-item" href="step4.html">Step 4</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"> You are on Step 3</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!--  Main Container  -->
+  <main class="container">
+
+    <!--  Header section  -->
+    <header class="row">
+      <h1 class="pt-5 pb-5">Sign up to yourcustomtailor.com</h1>
+    </header>
+    
+
+    <section class="row">
+      <div class="col-12">
+    
+        <h2 class="pt-5 pb-5">Step 3/4 - Time to learn about your preferences</h2>
+              
+        <!--  Progress bar section  -->
+        <div class="row pb-5">
+          <div class="col">
+            <label class="col-sm-2 col-form-label text-left">Progress</label>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" id="ProgressBar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+          </div>
+        </div>
+      
+        <!--  step 3 form   -->  
+        <form id="form3" action="step4.html">
+            
+          <section id="item-checkbox-selection">
+            <h5>What kind of items are you interested in offers on?</h5>
+
+            <!--  Checkbox Section  -->
+            <div class="form-group row">
+              <label for="apparal" class="col-3 col-sm-2 col-form-label text-right">Apparal</label>
+              <div class="col-3 col-sm-1">
+                  <div class="checkbox">
+                      <input type="checkbox" class="checkmark" id="apparal" name="item1" value="apparal">
+                  </div>
+              </div>
+              <label for="jewelry" class="col-3 col-sm-2 col-form-label text-right">Jewelry</label>
+              <div class="col-3 col-sm-1">
+                  <div class="checkbox">
+                      <input type="checkbox" class="checkmark" id="jewelry" name="item2" value="jewelry" >
+                  </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="accessories" class="col-3 col-sm-2 col-form-label text-right">Accessories</label>
+              <div class="col-3 col-sm-1">
+                  <div class="checkbox">
+                      <input type="checkbox" class="checkmark" id="accessories" name="item3" value="accessories" >
+                  </div>
+              </div>
+              <label for="shoes" class="col-3 col-sm-2 col-form-label text-right">Shoes</label>
+              <div class="col-3 col-sm-1">
+                  <div class="checkbox">
+                      <input type="checkbox" class="checkmark" id="shoes" name="item4" value="shoes" >
+                  </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="handbags" class="col-3 col-sm-2 col-form-label text-right">Handbags</label>
+              <div class="col-3 col-sm-1">
+                  <div class="checkbox">
+                      <input type="checkbox" class="checkmark" id="handbags" name="item5" value="handbags" >
+                  </div>
+              </div>
+            </div>
+          </section>
+
+          <!--  thumbnail section  -->
+          <section id="thumbnails">
+            <h5 class="pt-5 pb-5">Choose the images that best resemble your style</h5>
+            <p>You can click on the images to select them</p>
+
+            <!-- first row of images  -->  
+            <div class="form-row pt-3 pb-3">
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item1"><img src="img/shoes4.jpg" class="img-thumbnail" alt="Black high heel shoes"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item1">Select</label>
+                    <input class="checkmark" type="checkbox" id="item1" name="checkbox1" value="shoes4">
+                  </div>
+                </div> 
+              </div>
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item2"><img src="img/earrings1.jpg" class="img-thumbnail" alt="An earrings picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item2">Select</label>
+                    <input class="checkmark" type="checkbox" id="item2" name="checkbox2" value="earrings1">
+                  </div>
+                </div> 
+              </div>
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item3"><img src="img/handbag1.jpg" class="img-thumbnail" alt="A handbag picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item3">Select</label>
+                    <input class="checkmark" type="checkbox" id="item3" name="checkbox3" value="handbag1">
+                  </div>
+                </div> 
+              </div>
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item4"><img src="img/hat1.jpg" class="img-thumbnail" alt="A hat picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item4">Select</label>
+                    <input class="checkmark" type="checkbox" id="item4" name="checkbox4" value="hat1">
+                  </div>
+                </div> 
+              </div>
+                          
+            </div>
+            <!--  End of the first row of thumbnail images  -->
+
+            <!--  Start of the 2nd row of images  -->
+            
+            <div class="form-row pt-3 pb-3">
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item5"><img src="img/shoes1.JPG" class="img-thumbnail" alt="rubber shoe picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item5">Select</label>
+                    <input class="checkmark" type="checkbox" id="item5" name="checkbox5" value="shoes1">
+                  </div>
+                </div> 
+              </div>
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item6"><img src="img/watch1.jpg" class="img-thumbnail" alt="A watch picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item6">Select</label>
+                    <input class="checkmark" type="checkbox" id="item6" name="checkbox6" value="watch1">
+                  </div>
+                </div> 
+              </div>
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item7"><img src="img/shoes3.JPG" class="img-thumbnail" alt="Nike rubber shoe picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item7">Select</label>
+                    <input class="checkmark" type="checkbox" id="item7" name="checkbox7" value="shoes3">
+                  </div>
+                </div> 
+              </div>
+
+              <div class="col-6 col-sm-3">
+                <div class="row-auto">
+                    <label for="item8"><img src="img/dress1.jpg" class="img-thumbnail" alt="A black dress picture"></label>
+                </div>
+                <div class="row-auto text-align-right">
+                  <div class="d-flex justify-content-end">
+                    <label class="form-check-label p-2 align-item" for="item8">Select</label>
+                    <input class="checkmark" type="checkbox" id="item8" name="checkbox8" value="dress1">
+                  </div>
+                </div> 
+              </div>
+                            
+            </div>
+            <!-- end of 2nd Row -->
+            
+            <!-- Start of 3rd row   -->
+            <div class="form-row pt-3 pb-3">
+
+                <div class="col-6 col-sm-3">
+                  <div class="row-auto">
+                      <label for="item9"><img src="img/casual1.jpg" class="img-thumbnail" alt="A casual wear picture"></label>
+                  </div>
+                  <div class="row-auto text-align-right">
+                    <div class="d-flex justify-content-end">
+                      <label class="form-check-label p-2 align-item" for="item9">Select</label>
+                      <input class="checkmark" type="checkbox" id="item9" name="checkbox9" value="casual1">
+                    </div>
+                  </div> 
+                </div>
+  
+                <div class="col-6 col-sm-3">
+                  <div class="row-auto">
+                      <label for="item10"><img src="img/dress3.jpg" class="img-thumbnail" alt="A red dress picture"></label>
+                  </div>
+                  <div class="row-auto text-align-right">
+                    <div class="d-flex justify-content-end">
+                      <label class="form-check-label p-2 align-item" for="item10">Select</label>
+                      <input class="checkmark" type="checkbox" id="item10" name="checkbox10" value="dress3">
+                    </div>
+                  </div> 
+                </div>
+  
+                <div class="col-6 col-sm-3">
+                  <div class="row-auto">
+                      <label for="item11"><img src="img/pandora.jpg" class="img-thumbnail" alt="Pandora jewelry"></label>
+                  </div>
+                  <div class="row-auto text-align-right">
+                    <div class="d-flex justify-content-end">
+                      <label class="form-check-label p-2 align-item" for="item11">Select</label>
+                      <input class="checkmark" type="checkbox" id="item11" name="checkbox11" value="pandora">
+                    </div>
+                  </div> 
+                </div>
+  
+                <div class="col-6 col-sm-3">
+                  <div class="row-auto">
+                      <label for="item12"><img src="img/handbag3.jpg" class="img-thumbnail" alt="Hermes handbag"></label>
+                  </div>
+                  <div class="row-auto text-align-right">
+                    <div class="d-flex justify-content-end">
+                      <label class="form-check-label p-2 align-item" for="item12">Select</label>
+                      <input class="checkmark" type="checkbox" id="item12" name="checkbox12" value="handbag3">
+                    </div>
+                  </div> 
+                </div>
+                              
+              </div>
+              <!--  End of 3rd row  -->
+          </section> 
+          
+          <div class="d-flex justify-content-end pt-5 pb-5">
+                <button type="submit" class="btn btn-primary btn-lg">Next Step</button>            
+          </div>
+
+        </form>
+
+      </div>  
+    </section>      
+        
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+      function move(x,y) {
+        var elem = document.getElementById("ProgressBar");   
+        var width = x;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= y) {
+            clearInterval(id);
+          } else {
+            width++; 
+            elem.style.width = width + '%'; 
+          }
+        }
+      }
+  </script>
+
+</body>
+</html>

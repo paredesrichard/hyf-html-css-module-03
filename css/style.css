@@ -1,0 +1,45 @@
+
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+.jumbotron-fluid a {
+  color: white;
+}
+.checkmark {
+  height: 30px;
+  width: 30px;
+}
+.radiomark {
+  height: 20px;
+  width: 20px;
+}
+
+header {
+  padding-top: 60px;
+}
+.wire {
+  border: red 1px solid;  
+}
+
+.img-fluid {
+  justify-content: center;
+  min-width: 1400px;
+  min-height: 800px;
+}
+@media (max-width: 600px) {
+  .text-right  {
+      text-align: left !important;
+  }
+}
+
+
+
