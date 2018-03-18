@@ -11,6 +11,14 @@
 .jumbotron-fluid a {
   color: white;
 }
+.custombanner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display:block;
+  height: 100%;
+ }
+
 .checkmark {
   height: 30px;
   width: 30px;
@@ -22,11 +30,8 @@
 header {
   padding-top: 60px;
 }
-.img-fluid {
-  justify-content: center;
-  min-width: 1400px;
-  min-height: 800px;
-}
+
+
 @media (max-width: 600px) {
   .text-right  {
       text-align: left !important;
